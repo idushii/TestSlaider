@@ -1,3 +1,13 @@
-<p>
-  slider works!
-</p>
+<div class="wrap-slider" (click)="onClick()">
+  <p class="forward">
+    Пропустить
+  </p>
+  <div class="wrap-card">
+    <img [src]="items[index].img" alt="">
+    <div class="title">{{items[index].title}}</div>
+    <div class="text">{{items[index].text}}</div>
+  </div>
+  <div class="pagination">
+    <div class="point" *ngFor="let item of items; index as i" [ngClass]="{active: index==i}"></div>
+  </div>
+</div>

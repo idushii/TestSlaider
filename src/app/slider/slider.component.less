@@ -1,0 +1,60 @@
+@import "../../assets/var.less";
+
+.wrap-slider {
+    display: flex;
+    flex-direction: column;
+}
+.forward {
+    margin-left: auto;
+    margin-right: 18px;
+    color: @secondaryGrey;
+    font-size: 15px;
+    margin-top: 25px;
+  }
+  .wrap-card {
+      padding-top: 21px;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      margin-left: 32px;
+      margin-right: 33px;
+  }
+  img {
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+  }
+  .title {
+    margin-top: 28px;
+    margin-bottom: 12px;
+    color: @secondaryBlack;
+    font-size: 19px;
+    font-weight: bold;
+    align-items: center;
+    text-align: center;
+  }
+  .text {
+      text-align: center;
+      margin-bottom: 22px;
+  }
+  .pagination {
+      display: inline-flex;
+      justify-content: center;
+  }
+  .point {
+      margin-right: 16px;
+      margin-bottom: 40px;
+      height: 2px;
+      width: 2px;
+      background-color: #D8D8D8;;
+      border-radius: 50%;
+  }
+  .point.active {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #9B243E;
+  }
+  .pagination:last-child {
+      margin-right: 0;
+  }
