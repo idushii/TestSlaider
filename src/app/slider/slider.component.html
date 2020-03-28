@@ -3,7 +3,7 @@
     Пропустить
   </p>
   <div class="wrap-card" (click)="next()">
-    <img [src]="items[index].img" alt="" />
+    <div class="img" [ngStyle]="{'background-image':'url('+'items[index].img'+')'}"></div>
     <div class="title">{{ items[index].title }}</div>
     <div class="text">{{ items[index].text }}</div>
   </div>
