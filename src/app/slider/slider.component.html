@@ -1,13 +1,19 @@
-<div class="wrap-slider" (click)="onClick()">
-  <p class="forward">
+<div class="wrap-slider">
+  <p class="forward" (click)="handleForward()">
     Пропустить
   </p>
-  <div class="wrap-card">
-    <img [src]="items[index].img" alt="">
-    <div class="title">{{items[index].title}}</div>
-    <div class="text">{{items[index].text}}</div>
+  <div class="wrap-card" (click)="next()">
+    <img [src]="items[index].img" alt="" />
+    <div class="title">{{ items[index].title }}</div>
+    <div class="text">{{ items[index].text }}</div>
   </div>
   <div class="pagination">
-    <div class="point" *ngFor="let item of items; index as i" [ngClass]="{active: index==i}"></div>
+    <div class="wrap-point" *ngFor="let item of items; index as i">
+      <div
+        class="point"
+        (click)="open(index)"
+        [ngClass]="{ active: index == i }"
+      ></div>
+    </div>
   </div>
 </div>

@@ -56,8 +56,15 @@ export class SliderComponent implements OnInit {
 
   ngOnInit() {
   }
-  onClick() {
+  next() {
     this.index++
     if (this.index == 8) alert("Слайды закончились!")
+  }
+  open(index) {
+    this.index = index;
+  }
+
+  handleForward() {
+
   }
 }
