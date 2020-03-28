@@ -18,8 +18,12 @@
   margin-right: 33px;
 }
 .img {
+  margin-left: auto;
+  margin-right: auto;
+  height: 377px;
+  width: 200px;
   background-position: center;
-  background-size: 60%;
+  background-size: 100%;
 }
 .title {
   margin-top: 28px;
