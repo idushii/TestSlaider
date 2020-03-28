@@ -3,6 +3,7 @@
 .wrap-slider {
     display: flex;
     flex-direction: column;
+    justify-content: stretch;
 }
 .forward {
     margin-left: auto;
@@ -12,6 +13,7 @@
     margin-top: 25px;
   }
   .wrap-card {
+      height: 100%;
       padding-top: 20px;
       justify-content: center;
       display: flex;
@@ -22,11 +24,11 @@
   .img {
     margin-left: auto;
     margin-right: auto;
-    height: 377px;
-    width: 200px;
+    height: 100%;
+    width: 100%;
     background-position: center;
-    background-size: 100%;
-    
+    background-size: contain;
+    background-repeat: no-repeat;
   }
   .title {
     margin-top: 28px;
