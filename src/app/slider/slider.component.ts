@@ -24,6 +24,7 @@ export class SliderComponent implements OnInit {
     this.index++
     if (this.index == 8) alert("Слайды закончились!")
   }
+  
   open(index) {
     this.index = index;
   }
