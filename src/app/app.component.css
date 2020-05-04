@@ -3,9 +3,6 @@
   margin: 0;
   padding: 0;
 }
-
-::ng-deep {
-  body {
-    margin: 0px;
-  }
+::ng-deep body {
+  margin: 0px;
 }

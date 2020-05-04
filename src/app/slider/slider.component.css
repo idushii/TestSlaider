@@ -4,14 +4,14 @@
   justify-content: stretch;
   height: 100vh;
 }
-.forward {
+.wrap-slider .forward {
   margin-left: auto;
   margin-right: 18px;
   color: #808080;
   font-size: 15px;
   margin-top: 25px;
 }
-.wrap-card {
+.wrap-slider .wrap-card {
   height: 100%;
   padding-top: 20px;
   justify-content: center;
@@ -20,7 +20,7 @@
   margin-left: 32px;
   margin-right: 33px;
 }
-.img {
+.wrap-slider .img {
   margin-left: auto;
   margin-right: auto;
   height: 100%;
@@ -29,7 +29,7 @@
   background-size: contain;
   background-repeat: no-repeat;
 }
-.title {
+.wrap-slider .title {
   margin-top: 28px;
   margin-bottom: 12px;
   color: #333333;
@@ -38,16 +38,17 @@
   align-items: center;
   text-align: center;
 }
-.text {
+.wrap-slider .text {
   text-align: center;
   margin-bottom: 20px;
+  color: #808080;
 }
-.pagination {
+.wrap-slider .pagination {
   display: inline-flex;
   justify-content: center;
   align-items: center ;
 }
-.point {
+.wrap-slider .point {
   margin-right: 16px;
   margin-bottom: 40px;
   height: 5px;
@@ -55,12 +56,12 @@
   background-color: #D8D8D8;
   border-radius: 50%;
 }
-.point.active {
+.wrap-slider .point.active {
   width: 11px;
   height: 11px;
   border-radius: 50%;
   background-color: #9B243E;
 }
-.pagination:last-child {
+.wrap-slider .pagination:last-child {
   margin-right: 0;
 }
